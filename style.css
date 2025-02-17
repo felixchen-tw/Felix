@@ -15,11 +15,8 @@ html {
     scroll-behavior: smooth;
 }
 
-p ,li{
+p {
     color: rgb(85, 85, 85);
-}
-li {
-    margin-left: 1.5rem;
 }
 
 /* Transition */
@@ -267,6 +264,10 @@ section {
 
 .about-container, .about-details-container {
     display: flex;
+}
+.text-container li{
+    color: rgb(85, 85, 85);
+    margin-left: 1.5rem;
 }
 
 .about-pic {
