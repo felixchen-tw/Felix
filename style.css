@@ -146,6 +146,7 @@ section {
 
 .section-container {
     display: flex;
+    justify-content: center;
     gap: 4rem;
     height: 80%;
 }
@@ -258,7 +259,7 @@ section {
 }
 
 .about-details-container {
-    justify-content: centers;
+    justify-content: center;
     flex-direction: column;
 }
 
