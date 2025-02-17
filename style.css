@@ -265,7 +265,7 @@ section {
 .about-container, .about-details-container {
     display: flex;
 }
-.text-container li{
+.text-container ul{
     color: rgb(85, 85, 85);
     margin-left: 1.5rem;
 }
