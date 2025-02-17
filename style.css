@@ -146,6 +146,7 @@ section {
 
 .section-container {
     display: flex;
+    justify-content: center;
     gap: 4rem;
     height: 80%;
 }
@@ -264,6 +265,10 @@ section {
 
 .about-container, .about-details-container {
     display: flex;
+}
+.text-container ul{
+    color: rgb(85, 85, 85);
+    margin-left: 1.5rem;
 }
 
 .about-pic {
