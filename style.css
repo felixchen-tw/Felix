@@ -333,15 +333,22 @@ article .icon {
     position: relative;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+    width: 40vh;
 }
 
 .project-img {
     border-radius: 2rem;
-    width: 60vh;
-    height: 60vh;
+    width: 30vh;
+    height: 30vh;
 }
 
 .project-title {
