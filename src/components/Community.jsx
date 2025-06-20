@@ -6,14 +6,18 @@ const Community = () => {
             name: "Google Developer Group on Campus NTUST",
             position: "Core Team Member",
             duration: "Sep 2023 - Jun 2025",
-            description: "Involved in organizing events, workshops, and community outreach for the Google Developer Group.",
+            descriptions: [
+                "Organizing events, workshops, and community outreach for the Google Developer Group"
+            ],
             logo: "/GDGoCampus_ntust.png"
         },
         {
             name: "Computer Science and Information Engineering Student Association, NTUST", 
             position: "Vice President",
             duration: "Sep 2023 - Jul 2024",
-            description: "Leading members to organize events and activities for the student in the department.",
+            descriptions: [
+                "Leading members to organize events and activities for students in the department"
+            ],
             logo: "/ntust_csie_sa.jpg"
         }
     ];
@@ -59,10 +63,12 @@ const Community = () => {
                                     </div>
                                     
                                     <ul className="text-gray-700 space-y-1">
-                                        <li className="flex items-start">
-                                            <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                            {activity.description}
-                                        </li>
+                                        {activity.descriptions.map((desc, descIndex) => (
+                                            <li key={descIndex} className="flex items-start">
+                                                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                                {desc}
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>

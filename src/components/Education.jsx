@@ -6,7 +6,11 @@ const Education = () => {
             school: "Nation Taiwan University of Science and Technology",
             degree: "Bachelor of Computer Science",
             duration: "Sep 2022 - now",
-            description: "Currently pursuing a fourth-year in the department of Computer Science and Information Engineering, with a GPA of 3.93/4.3, ranking 28th (Top 28%) in the department.",
+            descriptions: [
+                "Senior", 
+                "GPA: 3.93/4.3", 
+                "ranking: 28/98"
+            ],
             logo: "/ntust.png"
         },
     ];
@@ -52,10 +56,12 @@ const Education = () => {
                                     </div>
                                     
                                     <ul className="text-gray-700 space-y-1">
-                                        <li className="flex items-start">
-                                            <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                            {edu.description}
-                                        </li>
+                                        {edu.descriptions.map((desc, descIndex) => (
+                                            <li key={descIndex} className="flex items-start">
+                                                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                                {desc}
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>

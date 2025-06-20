@@ -6,14 +6,20 @@ const Experience = () => {
             company: "Company",
             position: "Position",
             duration: "Sep 2024 - now",
-            description: "description",
+            descriptions: [
+                "description 1",
+                "description 2"
+            ],
             logo: "/placeholder-company-1.png"
         },
         {
             company: "Company",
             position: "Position", 
             duration: "Sep 2024 - now",
-            description: "description",
+            descriptions: [
+                "description 1",
+                "description 2"
+            ],
             logo: "/placeholder-company-2.png"
         }
     ];
@@ -59,10 +65,12 @@ const Experience = () => {
                                     </div>
                                     
                                     <ul className="text-gray-700 space-y-1">
-                                        <li className="flex items-start">
-                                            <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                            {exp.description}
-                                        </li>
+                                        {exp.descriptions.map((desc, descIndex) => (
+                                            <li key={descIndex} className="flex items-start">
+                                                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                                {desc}
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
