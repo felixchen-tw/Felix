@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
-// import Experience from './components/Experience';
+import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
-import Community from './components/Community';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,10 +12,9 @@ function App() {
       <Header />
       <main>
         <About />
-        {/* <Experience /> */}
+        <Experience />
         <Education />
         <Projects />
-        <Community />
       </main>
       <Footer />
     </div>

@@ -3,24 +3,22 @@ import React from 'react';
 const Experience = () => {
     const experiences = [
         {
-            company: "Company",
-            position: "Position",
-            duration: "Sep 2024 - now",
+            name: "Google Developer Group on Campus, NTUST",
+            position: "Core Team Member",
+            duration: "Sep 2023 - Jun 2025",
             descriptions: [
-                "description 1",
-                "description 2"
+                "Organizing events, workshops, and community outreach for the Google Developer Group"
             ],
-            logo: "/placeholder-company-1.png"
+            logo: "/GDGoCampus_ntust.png"
         },
         {
-            company: "Company",
-            position: "Position", 
-            duration: "Sep 2024 - now",
+            name: "Computer Science and Information Engineering Student Association, NTUST", 
+            position: "Vice President",
+            duration: "Sep 2023 - Jul 2024",
             descriptions: [
-                "description 1",
-                "description 2"
+                "Leading members to organize events and activities for students in the department"
             ],
-            logo: "/placeholder-company-2.png"
+            logo: "/ntust_csie_sa.jpg"
         }
     ];
 
@@ -55,7 +53,7 @@ const Experience = () => {
                                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
                                         <div>
                                             <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                                                {exp.company}
+                                                {exp.name}
                                             </h3>
                                             <p className="text-gray-600 mb-2">{exp.position}</p>
                                         </div>

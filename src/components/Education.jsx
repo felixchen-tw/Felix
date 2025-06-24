@@ -4,7 +4,7 @@ const Education = () => {
     const educations = [
         {
             school: "Nation Taiwan University of Science and Technology",
-            degree: "Bachelor of Computer Science",
+            degree: "Bachelor of Computer Science and Information Engineering",
             duration: "Sep 2022 - now",
             descriptions: [
                 "Senior", 
