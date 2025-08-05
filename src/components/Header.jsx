@@ -18,10 +18,9 @@ const Header = () => {
           <nav className="hidden md:flex">
             <ul className="flex space-x-8">
               <li><a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors">About me</a></li>
-              {/* <li><a href="#experience" className="text-gray-700 hover:text-gray-900 transition-colors">Experiences</a></li> */}
+              <li><a href="#experiences" className="text-gray-700 hover:text-gray-900 transition-colors">Experiences</a></li>
               <li><a href="#education" className="text-gray-700 hover:text-gray-900 transition-colors">Education</a></li>
               <li><a href="#projects" className="text-gray-700 hover:text-gray-900 transition-colors">Projects</a></li>
-              <li><a href="#community" className="text-gray-700 hover:text-gray-900 transition-colors">Community</a></li>
             </ul>
           </nav>
 

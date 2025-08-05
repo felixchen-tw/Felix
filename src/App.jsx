@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import Experience from './components/Experience';
+import Experiences from './components/Experiences';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <main>
         <About />
-        <Experience />
+        <Experiences />
         <Education />
         <Projects />
       </main>

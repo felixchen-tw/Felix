@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Experience = () => {
+const Experiences = () => {
     const experiences = [
         {
             name: "Google Developer Group on Campus, NTUST",
@@ -23,7 +23,7 @@ const Experience = () => {
     ];
 
     return (
-        <section id="experience" className="py-16 bg-gray-50">
+        <section id="experiences" className="py-16 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center md:text-left">
                     Experiences
@@ -80,4 +80,4 @@ const Experience = () => {
     );
 };
 
-export default Experience;
+export default Experiences;
