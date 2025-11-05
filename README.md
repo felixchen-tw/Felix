@@ -65,9 +65,3 @@ To get started with this project, follow these steps:
 - Responsive design that adapts to different screen sizes.
 - Sections for About, Experience, Education, Projects, and Community involvement.
 - Custom styling using Tailwind CSS.
-
-## Author
-
-[Your Name] - [Your Email] - [Your LinkedIn Profile] 
-
-Feel free to reach out for any inquiries or collaborations!
