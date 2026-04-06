@@ -5,11 +5,9 @@ const Education = () => {
         {
             school: "Nation Taiwan University of Science and Technology",
             degree: "Bachelor of Computer Science and Information Engineering",
-            duration: "Sep 2022 - now",
-            descriptions: [
-                "Senior", 
-                "GPA: 3.93/4.3", 
-                "ranking: 28/98"
+            duration: "Sep 2022 - Jan 2026",
+            descriptions: [ 
+                "GPA: 3.91/4.3"
             ],
             logo: "/ntust.png"
         },
