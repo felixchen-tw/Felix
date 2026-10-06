@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = () => {
+const About = ({ t }) => {
     return (
         <section id="about" className="pt-20 pb-16 bg-white">
             <div className="max-w-6xl mx-auto px-4">
@@ -26,32 +26,31 @@ const About = () => {
 
                     {/* Profile Info */}
                     <div className="flex-1 text-center md:text-left">
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Felix</h1>
-                        <p className="text-xl md:text-2xl text-gray-600 mb-6">Software Engineer</p>
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Felix</h1>
 
                         {/* Contact Info */}
                         <div className="mb-8">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact</h3>
+                            <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('Contact', '聯絡方式')}</h3>
                             <div className="space-y-3">
                                 <div className="flex items-center justify-center md:justify-start">
                                     <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-                                    <span className="text-gray-600">me@felixchen.tw</span>
+                                    <span className="text-gray-600">contact@felixchen.tw</span>
                                 </div>
                                 <div className="flex items-center justify-center md:justify-start">
                                     <svg className="w-5 h-5 text-gray-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
-                                    <span className="text-gray-600">Taipei, Taiwan</span>
+                                    <span className="text-gray-600">{t('Taiwan', '台灣')}</span>
                                 </div>
                             </div>
                         </div>
 
                         {/* Social Links */}
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900 mb-4">Connect with me</h3>
+                            <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('Connect with me', '社群連結')}</h3>
                             <div className="flex space-x-4 justify-center md:justify-start">
                                 <a href="https://github.com/felixchen-tw" target="_blank" rel="noopener noreferrer" 
                                    className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors">
@@ -74,7 +73,7 @@ const About = () => {
                                     </svg>
                                 </a>
                                 
-                                <a href="mailto:me@felixchen.tw" 
+                                <a href="mailto:contact@felixchen.tw" 
                                    className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-100 hover:text-green-600 transition-colors">
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -88,16 +87,16 @@ const About = () => {
                 {/* Description Section - Separate Container */}
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <div className="text-gray-700 leading-relaxed">
-                        <p className="text-lg">I am a CS student in Taiwan.</p>
-                        <p className="text-lg">I am interested in web development, especially frontend technologies and DevOps.</p>
-                        <p className="text-lg">I am also passionate about photography.</p>
+                        <p className="text-lg">{t('I am a graduate student in Computer Science at National Cheng Kung University, Taiwan.', '我是國立成功大學的資工碩士生。')}</p>
+                        <p className="text-lg">{t('I love building websites and self-hosting my own services.', '我喜歡寫網頁，也喜歡自架各種服務。')}</p>
+                        <p className="text-lg">{t('I also enjoy photography and reading.', '我也喜歡攝影和閱讀。')}</p>
                     </div>
                 </div>
 
                 {/* Skills & Tech Stack Section */}
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                        Skills & Tech Stack
+                        {t('Skills & Tech Stack', '技能與技術')}
                     </h2>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -107,7 +106,7 @@ const About = () => {
                                 <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                 </svg>
-                                Programming Languages
+                                {t('Programming Languages', '程式語言')}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {['JavaScript', 'TypeScript', 'Python', 'C++', 'HTML', 'CSS'].map((skill) => (
@@ -124,7 +123,7 @@ const About = () => {
                                 <svg className="w-6 h-6 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                Frontend Technologies
+                                {t('Frontend Technologies', '前端技術')}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {['React', 'Tailwind CSS'].map((skill) => (
@@ -135,34 +134,35 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* Backend & Database */}
-                        {/* <div className="bg-gray-50 rounded-lg p-6">
+
+                        {/* Self-hosting */}
+                        <div className="bg-gray-50 rounded-lg p-6">
                             <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                                 <svg className="w-6 h-6 mr-3 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                                 </svg>
-                                Backend & Database
+                                {t('Self-hosting', '自架服務')}
                             </h3>
                             <div className="flex flex-wrap gap-2">
-                                {['Node.js', 'MySQL'].map((skill) => (
+                                {['Docker', 'Nginx Proxy Manager', 'Vaultwarden', 'AdGuard Home', 'Uptime Kuma', 'FreshRSS', 'Syncthing', 'MCSManager', 'FRP', 'Tailscale DERP', 'Homepage'].map((skill) => (
                                     <span key={skill} className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">
                                         {skill}
                                     </span>
                                 ))}
                             </div>
-                        </div> */}
+                        </div>
 
-                        {/* DevOps & Tools */}
+                        {/* Tools */}
                         <div className="bg-gray-50 rounded-lg p-6">
                             <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                                 <svg className="w-6 h-6 mr-3 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                DevOps & Tools
+                                {t('Tools', '工具')}
                             </h3>
                             <div className="flex flex-wrap gap-2">
-                                {['Git', 'GitHub', 'Docker', 'Zeabur', 'VS Code'].map((skill) => (
+                                {['Git', 'GitHub', 'Zeabur', 'Vultr', 'VS Code'].map((skill) => (
                                     <span key={skill} className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">
                                         {skill}
                                     </span>

@@ -8,28 +8,24 @@ The project is organized as follows:
 
 ```
 personal-portfolio
-├── public
-│   ├── index.html        # Main HTML file
-│   └── favicon.ico       # Favicon for the website
+├── public                # index.html, favicon, images, CV (served as-is)
 ├── src
-│   ├── components        # React components for the portfolio
+│   ├── components
 │   │   ├── Header.jsx
 │   │   ├── About.jsx
-│   │   ├── Experience.jsx
+│   │   ├── Experiences.jsx
 │   │   ├── Education.jsx
 │   │   ├── Projects.jsx
-│   │   ├── Community.jsx
 │   │   └── Footer.jsx
-│   ├── assets            # Directory for images
-│   │   └── images
-│   ├── styles            # CSS styles
+│   ├── styles
 │   │   └── index.css
-│   ├── App.jsx           # Main application component
-│   └── index.js          # Entry point for the React application
-├── package.json          # npm configuration file
-├── tailwind.config.js    # Tailwind CSS configuration
-├── postcss.config.js     # PostCSS configuration
-└── README.md             # Project documentation
+│   ├── App.jsx
+│   └── index.js
+├── build                 # production output (npm run build)
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
 ```
 
 ## Getting Started

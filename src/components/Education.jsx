@@ -1,11 +1,21 @@
 import React from 'react';
 
-const Education = () => {
+const Education = ({ t }) => {
     const educations = [
         {
-            school: "Nation Taiwan University of Science and Technology",
-            degree: "Bachelor of Computer Science and Information Engineering",
-            duration: "Sep 2022 - Jan 2026",
+            school: t("National Cheng Kung University", "國立成功大學"),
+            degree: t("Graduate Program of Artificial Intelligence", "人工智慧科技碩士學位學程"),
+            duration: t("Sep 2026 - Present", "2026 年 9 月 - 至今"),
+            descriptions: [
+                <>{t("Member of ", "實驗室：")}<a href="https://algorithm.csie.ncku.edu.tw/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">{t("Advanced Intelligent and High-Performance Computing Laboratory (INHPC Lab)", "前瞻智慧計算與應用實驗室（INHPC Lab）")}</a></>,
+                t("Research: automated pathology report generation from whole slide images (WSI)", "研究方向：利用全切片影像（WSI）自動生成病理報告")
+            ],
+            logo: "/NCKU.jpg"
+        },
+        {
+            school: t("National Taiwan University of Science and Technology", "國立臺灣科技大學"),
+            degree: t("Bachelor of Computer Science and Information Engineering", "資訊工程系 學士"),
+            duration: t("Sep 2022 - Jan 2026", "2022 年 9 月 - 2026 年 1 月"),
             descriptions: [ 
                 "GPA: 3.91/4.3"
             ],
@@ -17,7 +27,7 @@ const Education = () => {
         <section id="education" className="py-16 bg-white">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center md:text-left">
-                    Education
+                    {t('Education', '學歷')}
                 </h2>
                 
                 <div className="space-y-6">
@@ -57,7 +67,7 @@ const Education = () => {
                                         {edu.descriptions.map((desc, descIndex) => (
                                             <li key={descIndex} className="flex items-start">
                                                 <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                                                {desc}
+                                                <span>{desc}</span>
                                             </li>
                                         ))}
                                     </ul>

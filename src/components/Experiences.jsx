@@ -1,22 +1,22 @@
 import React from 'react';
 
-const Experiences = () => {
+const Experiences = ({ t }) => {
     const experiences = [
         {
-            name: "Google Developer Group on Campus, NTUST",
-            position: "Core Team Member",
-            duration: "Sep 2023 - Jun 2025",
+            name: t("Google Developer Group on Campus, NTUST", "Google Developer Group on Campus 臺科大"),
+            position: t("Core Team Member", "核心成員"),
+            duration: t("Sep 2023 - Jun 2025", "2023 年 9 月 - 2025 年 6 月"),
             descriptions: [
-                "Organizing events, workshops, and community outreach for the Google Developer Group"
+                t("Organizing events, workshops, and community outreach for the Google Developer Group", "籌辦 Google Developer Group 的活動、工作坊與社群推廣")
             ],
             logo: "/GDGoCampus_ntust.png"
         },
         {
-            name: "Computer Science and Information Engineering Student Association, NTUST", 
-            position: "Vice President",
-            duration: "Sep 2023 - Jul 2024",
+            name: t("Computer Science and Information Engineering Student Association, NTUST", "臺科大資訊工程系學生會"),
+            position: t("Vice President", "副會長"),
+            duration: t("Sep 2023 - Jul 2024", "2023 年 9 月 - 2024 年 7 月"),
             descriptions: [
-                "Leading members to organize events and activities for students in the department"
+                t("Leading members to organize events and activities for students in the department", "帶領幹部為系上同學籌辦各項活動")
             ],
             logo: "/ntust_csie_sa.jpg"
         }
@@ -26,7 +26,7 @@ const Experiences = () => {
         <section id="experiences" className="py-16 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center md:text-left">
-                    Experiences
+                    {t('Experiences', '經歷')}
                 </h2>
                 
                 <div className="space-y-6">
@@ -37,7 +37,7 @@ const Experiences = () => {
                                 <div className="w-12 h-12 bg-gray-200 rounded-lg flex-shrink-0 flex items-center justify-center">
                                     <img 
                                         src={exp.logo} 
-                                        alt={`${exp.company} Logo`} 
+                                        alt={`${exp.name} Logo`} 
                                         className="w-full h-full object-cover rounded-lg"
                                         onError={(e) => {
                                             e.target.style.display = 'none';

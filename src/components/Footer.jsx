@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ t }) => {
     return (
         <footer className="bg-gray-900 text-white py-8">
             <div className="max-w-6xl mx-auto px-4">
@@ -42,7 +42,7 @@ const Footer = () => {
                 {/* Copyright */}
                 <div className="mt-8 pt-8 border-t border-gray-800 text-center">
                     <p className="text-gray-400 text-sm">
-                        © {new Date().getFullYear()} Felix. All rights reserved.
+                        © {new Date().getFullYear()} Felix. {t('All rights reserved.', '版權所有。')}
                     </p>
                 </div>
             </div>
