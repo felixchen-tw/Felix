@@ -7,7 +7,7 @@ const Education = ({ t }) => {
             degree: t("Graduate Program of Artificial Intelligence", "人工智慧科技碩士學位學程"),
             duration: t("Sep 2026 - Present", "2026 年 9 月 - 至今"),
             descriptions: [
-                <>{t("Member of ", "實驗室：")}<a href="https://algorithm.csie.ncku.edu.tw/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">{t("Advanced Intelligent and High-Performance Computing Laboratory (INHPC Lab)", "前瞻智慧計算與應用實驗室（INHPC Lab）")}</a></>,
+                <>{t("Member of ", "實驗室：")}<a href="https://algorithm.csie.ncku.edu.tw/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">{t("Interconnection Network and High-Performance Computation Laboratory (INHPC Lab)", "前瞻智慧計算與應用實驗室（INHPC Lab）")}</a></>,
                 t("Research: automated pathology report generation from whole slide images (WSI)", "研究方向：利用全切片影像（WSI）自動生成病理報告")
             ],
             logo: "/NCKU.jpg"
