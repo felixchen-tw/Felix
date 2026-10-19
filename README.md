@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is a personal portfolio project built using React and Tailwind CSS. It showcases my skills, experience, education, and projects in a responsive layout.
+This is a personal portfolio project built with Astro, React and Tailwind CSS, with a Markdown blog. It showcases my skills, experience, education, and projects in a responsive layout.
 
 ## Project Structure
 
@@ -8,7 +8,7 @@ The project is organized as follows:
 
 ```
 personal-portfolio
-├── public                # index.html, favicon, images, CV (served as-is)
+├── public                # favicon, images, CV (served as-is)
 ├── src
 │   ├── components
 │   │   ├── Header.jsx
@@ -17,11 +17,15 @@ personal-portfolio
 │   │   ├── Education.jsx
 │   │   ├── Projects.jsx
 │   │   └── Footer.jsx
+│   ├── content/blog      # blog posts (*.md, frontmatter: title, date, description, draft, lang)
+│   ├── layouts           # Base.astro (<head>), Blog.astro
+│   ├── pages             # index.astro (React App island), blog/
 │   ├── styles
 │   │   └── index.css
-│   ├── App.jsx
-│   └── index.js
-├── build                 # production output (npm run build)
+│   ├── content.config.mjs
+│   └── App.jsx
+├── dist                  # production output (npm run build)
+├── astro.config.mjs
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
@@ -45,7 +49,7 @@ To get started with this project, follow these steps:
 
 3. **Run the application:**
    ```
-   npm start
+   npm run dev
    ```
 
    This will start the development server and open the application in your default web browser.

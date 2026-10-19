@@ -8,6 +8,7 @@ const Header = ({ t, toggleLang }) => {
     ['#experiences', t('Experiences', '經歷')],
     ['#education', t('Education', '學歷')],
     ['#projects', t('Projects', '作品')],
+    ['/blog/', t('Blog', '部落格')],
   ];
 
   return (
