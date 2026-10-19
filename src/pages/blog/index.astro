@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Blog from '../../layouts/Blog.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date - a.data.date);
+---
+<Blog title="Blog — Felix">
+  <h1 class="text-3xl font-bold text-gray-900 mb-8">Blog</h1>
+  <ul class="space-y-6">
+    {posts.map((post) => (
+      <li>
+        <a href={`/blog/${post.id}/`} class="text-xl font-semibold text-gray-900 hover:text-primary">{post.data.title}</a>
+        <p class="text-sm text-gray-500">{post.data.date.toISOString().slice(0, 10)}</p>
+        {post.data.description && <p class="text-gray-700">{post.data.description}</p>}
+      </li>
+    ))}
+  </ul>
+</Blog>

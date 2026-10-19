@@ -42,3 +42,18 @@ body {
     @apply transition-all duration-300 ease-in-out;
   }
 }
+/* Markdown post body (preflight strips default element styles) */
+@layer components {
+  .post { @apply text-gray-800 leading-relaxed; }
+  .post > * + * { @apply mt-4; }
+  .post h2 { @apply text-2xl font-bold mt-10; }
+  .post h3 { @apply text-xl font-semibold mt-8; }
+  .post a { @apply text-primary underline; }
+  .post ul { @apply list-disc pl-6; }
+  .post ol { @apply list-decimal pl-6; }
+  .post blockquote { @apply border-l-4 border-gray-300 pl-4 text-gray-600; }
+  .post code { @apply bg-gray-100 rounded px-1 text-sm; }
+  .post pre { @apply rounded p-4 overflow-x-auto text-sm; }
+  .post pre code { @apply bg-transparent p-0; }
+  .post img { @apply rounded; }
+}
