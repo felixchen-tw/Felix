@@ -17,7 +17,7 @@ personal-portfolio
 │   │   ├── Education.jsx
 │   │   ├── Projects.jsx
 │   │   └── Footer.jsx
-│   ├── content/blog      # blog posts (*.md, frontmatter: title, date, description, draft)
+│   ├── content/blog      # blog posts (*.md, frontmatter: title, date, description, draft, lang)
 │   ├── layouts           # Base.astro (<head>), Blog.astro
 │   ├── pages             # index.astro (React App island), blog/
 │   ├── styles

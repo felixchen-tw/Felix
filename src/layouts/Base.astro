@@ -2,12 +2,13 @@
 import '../styles/index.css';
 
 const {
+  lang = 'en',
   title = 'Felix',
   description = 'Felix Chen — CS graduate student at NCKU, interested in frontend, DevOps and photography.',
 } = Astro.props;
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
