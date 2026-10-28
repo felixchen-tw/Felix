@@ -8,8 +8,8 @@ const Footer = ({ t }) => {
                 <div className="flex flex-col items-center md:flex-row md:justify-between">
                     {/* Logo */}
                     <div className="flex items-center mb-6 md:mb-0">
-                        <div className="w-8 h-8 bg-white rounded flex items-center justify-center mr-3">
-                            <img src="/Felix_ITDWS.png" alt="Felix Logo" className="w-full h-full object-cover rounded" />
+                        <div className="w-8 h-8 flex items-center justify-center mr-3">
+                            <img src="/Felix-Apple-round.png" alt="Felix Logo" className="w-full h-full" />
                         </div>
                         <span className="text-lg font-semibold">Felix</span>
                     </div>
