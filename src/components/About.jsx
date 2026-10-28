@@ -10,7 +10,7 @@ const About = ({ t }) => {
                     <div className="flex-shrink-0">
                         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gray-100">
                             <img 
-                                src="/Felix-Chen-cutout.png" 
+                                src="/Felix-Chen-cutout.webp" 
                                 alt="Felix Profile" 
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
