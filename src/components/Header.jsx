@@ -18,7 +18,7 @@ const Header = ({ t, toggleLang }) => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="w-8 h-8 flex items-center justify-center">
-              <img src="Felix_ITDWS.png" alt="Logo" />
+              <img src="/Felix-Apple-round.png" alt="Logo" />
             </div>
           </div>
 

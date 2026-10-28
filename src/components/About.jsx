@@ -8,9 +8,9 @@ const About = ({ t }) => {
                 <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
                     {/* Profile Image */}
                     <div className="flex-shrink-0">
-                        <div className="w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden bg-gray-200">
+                        <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gray-100">
                             <img 
-                                src="Felix_MacBook.JPG" 
+                                src="/Felix-Chen-cutout.png" 
                                 alt="Felix Profile" 
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
